@@ -3,7 +3,10 @@
     height:90px;
   }
   
-  
+.header-list a{
+  color: inherit;
+  text-decoration: none;
+} 
  
   .main{
     padding:80px;

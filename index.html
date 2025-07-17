@@ -31,37 +31,54 @@
         
         <div class="contents">
             
-              
-                <h3>学習してきた言語</h3>
-                
-                
-                <div class="contents-item">
-                  <img src="./image/キャベツイラスト.jpg">
-                  <p>HTML&CSS</p>
-                </div>
-                
-                <div class="contents-item">
-                    <img src="./image/りんごさん.jpg">
-                    <p>JavaScript(React)</p>
-                </div>
-                
-                <div class="contents-item">
-                    <img src="./image/タコさんウインナーのイラスト.jpg">
-                    <p>Java(Springboot)</p>
-                </div>
-                
-                
-                <div class="contents-item">
-                    <img src="./image/くりのイラスト.jpg">
-                    <p>SQL(PostgreSQL/MySQL)</p>
-                </div>
-                
-              </div>
-              
-              <div class="contact-form">
-                
-              </div>
             
+            <h3>学習してきた言語</h3>
+            
+            
+            <div class="contents-item">
+                <a href="page1.html">
+                <img src="./image/キャベツイラスト.jpg" alt="キャベツ">
+                </a>
+                <p>HTML&CSS</p>
+            </div>
+
+            <div class="contents-item">
+                <a href="page2.html">
+                <img src="./image/りんごさん.jpg" alt="りんご">
+                </a>
+                <p>JavaScript(React)</p>
+            </div>
+
+            <div class="contents-item">
+                <a href="page3.html">
+                <img src="./image/タコさんウインナーのイラスト.jpg" alt="タコさんウインナー">
+                </a>
+                <p>Java(Springboot)</p>
+            </div>
+
+            <div class="contents-item">
+                <a href="page4.html">
+                <img src="./image/くりのイラスト.jpg" alt="くり">
+                </a>
+                <p>SQL(PostgreSQL/MySQL)</p>
+            </div>
+
+            <script>
+            // すべての画像にホバーイベントを追加
+            const images = document.querySelectorAll('.contents-item img');
+
+            images.forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.2)';
+            });
+
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+            });
+            </script>
+              
+        
         
         </div>
         

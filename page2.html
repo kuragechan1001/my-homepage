@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>mizumotopage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript(React) - Mizumoto Portfolio</title>
     <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="/home/mizukawaairi/my-page/image"> 
   </head>
 
-  
   <body>
-    <div class="header">
-      <div class="header-logo">
-          Mizumoto
-      </div>
+    <header class="header">
+      <a href="index.html" class="header-logo">
+          <img src="./image/logo.png" alt="Mizumoto" class="logo-img">
+      </a>
       
-      <div class="header-list">
+      <nav class="header-list">
           <ul>
-            <a href="index.html">
-              <li>自己紹介</li>
-            </a>
-              <li>趣味</li>
-              <li>お問い合わせ</li>
+              <li><a href="index.html">自己紹介</a></li>
+              <li><a href="hobby.html">趣味</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
           </ul>
-      </div>
+      </nav>
+    </header>
 
-  </div>
-
-  <div class="main">
-    <h1>JavaScript(React)について</h1>
-    <p>
-      投稿アプリを作成した際に、フロントはReactで作成しました！<br>
-      fechを使用しクエリをバックエンドに投げて、データベースの情報を取って来ることをしました。<br>
-      useMemoやuseCallbackを使って、メモ化をして処理を軽くしたり、<br>
-      useContextを使って、投稿の一覧取得のAPIの処理等をまとめて共通化してました。<br>
-      ログインした際に取得したログイン情報やトークンを保持して共有させるのにも使いました。<br>
-      ページング機能やAPIの部分をwrapperし、共通の関数を作り記述を少なくしました。<br>
-    </p>
-  </div>
+    <main class="main">
+        <h1 style="color: #61dafb; margin-bottom: 50px; font-weight: 600;">JavaScript(React)について</h1>
+        <div style="background: linear-gradient(135deg, #e8f4f8 0%, #d1e9f1 100%); padding: 40px; border-radius: 16px; border-left: 4px solid #61dafb;">
+            <p style="color: #1a4d5c; line-height: 2; margin: 0;">
+              投稿アプリケーションの開発において、フロントエンドにReactを採用しました。<br>
+              Fetch APIを活用してバックエンドと通信し、データベースから情報を取得する機能を実装しました。<br>
+              パフォーマンス最適化のため、useMemoやuseCallbackを利用したメモ化を実践し、不要な再レンダリングを抑制しました。<br>
+              useContextを活用して、投稿一覧取得などのAPI処理を共通化し、コードの再利用性と保守性を向上させました。<br>
+              認証機能においては、ログイン時に取得した認証情報やトークンをContext APIで管理し、アプリケーション全体で共有できるように実装しました。<br>
+              ページネーション機能やAPI通信処理をカスタムフックとして抽象化し、コードの重複を削減し、可読性を向上させました。<br>
+            </p>
+        </div>
+    </main>
      
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-logo">
-          Mizumoto
+          <img src="./image/logo.png" alt="Mizumoto" class="footer-logo-img">
       </div>
       
       <div class="footer-list">
@@ -50,9 +48,6 @@
               <li>お問い合わせ</li>
           </ul>
       </div>
-    
-  </div>
+    </footer>
   </body>
-  
-  
 </html>

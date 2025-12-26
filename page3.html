@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>mizumotopage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java(Springboot) - Mizumoto Portfolio</title>
     <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="/home/mizukawaairi/my-page/image"> 
   </head>
 
-  
   <body>
-    <div class="header">
-      <div class="header-logo">
-          Mizumoto
-      </div>
+    <header class="header">
+      <a href="index.html" class="header-logo">
+          <img src="./image/logo.png" alt="Mizumoto" class="logo-img">
+      </a>
       
-      <div class="header-list">
+      <nav class="header-list">
           <ul>
-            <a href="index.html">
-              <li>自己紹介</li>
-            </a>
-              <li>趣味</li>
-              <li>お問い合わせ</li>
+              <li><a href="index.html">自己紹介</a></li>
+              <li><a href="hobby.html">趣味</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
           </ul>
-      </div>
-  </div>
+      </nav>
+    </header>
 
-  <div class="main">
-    <h1>Java(Springboot)について</h1>
-    <p>
-      MVCモデルの構造を学習し、実際に投稿アプリを作成しました。<br>
-      バリデーションの練習もたくさん行い、何文字以上何文字以下じゃないと投稿できない機能や、<br>
-      同一ユーザーが１０秒以内に投稿できなくする時間制限のバリデーション、<br>
-      正規表現を使いパスワードや電話番号登録の際のバリデーションを作成したりしました。<br>
-      難しかったのはリポジトリで＠Queryのアノテーションを用いて、SQL文のようなのを書くやつでした。<br>
-      カラムの順番が違ったりするとすぐエラーになるのですが、リクエストは通るのに表示されない等でそのエラーを探すのも大変でした。<br>
-    </p>
-  </div>
+    <main class="main">
+        <h1 style="color: #ed8b00; margin-bottom: 50px; font-weight: 600;">Java(Springboot)について</h1>
+        <div style="background: linear-gradient(135deg, #fff8e8 0%, #ffe8cc 100%); padding: 40px; border-radius: 16px; border-left: 4px solid #ed8b00;">
+            <p style="color: #8b4f00; line-height: 2; margin: 0;">
+              MVCアーキテクチャパターンを理解し、Spring Bootフレームワークを用いて投稿アプリケーションを開発しました。<br>
+              バリデーション機能を実装し、文字数制限による入力制御や、同一ユーザーの連続投稿を防止する時間制限機能を実装しました。<br>
+              正規表現を活用して、パスワードの強度チェックや電話番号の形式検証など、セキュリティとデータ整合性を確保するバリデーションを実装しました。<br>
+              リポジトリ層において@Queryアノテーションを使用したカスタムクエリの実装に取り組みました。<br>
+              カラムの順序や型の不一致によるエラーに直面し、リクエストは成功するもののデータが正しくマッピングされない問題を解決する過程で、デバッグスキルとデータベース操作への理解を深めました。<br>
+            </p>
+        </div>
+    </main>
      
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-logo">
-          Mizumoto
+          <img src="./image/logo.png" alt="Mizumoto" class="footer-logo-img">
       </div>
       
       <div class="footer-list">
@@ -49,9 +47,6 @@
               <li>お問い合わせ</li>
           </ul>
       </div>
-    
-  </div>
+    </footer>
   </body>
-  
-  
 </html>

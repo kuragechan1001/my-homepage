@@ -1,102 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>mizumotopage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizumoto - Portfolio</title>
     <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="/home/mizukawaairi/my-page/image"> 
   </head>
   <body>
-    
-    <div class="header">
-        <div class="header-logo">
-            Mizumoto
-        </div>
-        
-        <div class="header-list">
+
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="./image/logo.png" alt="Mizumoto" class="logo-img">
+        </a>
+
+        <nav class="header-list">
             <ul>
-                <a href="index.html">
-                <li>自己紹介</li>
-                </a>
-                <li>趣味</li>
-                <li>お問い合わせ</li>
+                <li><a href="index.html">自己紹介</a></li>
+                <li><a href="hobby.html">趣味</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
-        </div>
-    </div>
-    
-    <div class="main">
-    
-        <div class="copy-container">
-            <h1>HELLO WORLD.</h1>
-            <h2>水元愛梨のプロフィールへようこそ</h2>
-        </div>
-        
-        <div class="contents">
-            
-            
-            <h3>学習してきた言語</h3>
-            
-            
-            <div class="contents-item">
-                <a href="page1.html">
-                <img src="./image/キャベツイラスト.jpg" alt="キャベツ">
-                </a>
-                <p>HTML&CSS</p>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="copy-container">
+            <div class="hero-content">
+                <h1 class="hero-title">HELLO WORLD.</h1>
+                <h2 class="hero-subtitle">わたしのプロフィールへようこそ</h2>
+                <div class="hero-divider"></div>
             </div>
+        </section>
 
-            <div class="contents-item">
-                <a href="page2.html">
-                <img src="./image/りんごさん.jpg" alt="りんご">
-                </a>
-                <p>JavaScript(React)</p>
+        <section class="contents">
+            <h3 class="section-title">学習してきた言語</h3>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <a href="page1.html" class="tech-link">
+                        <div class="tech-image-wrapper">
+                            <img src="./image/html.png" alt="HTML">
+                        </div>
+                        <p class="tech-name">HTML&CSS</p>
+                    </a>
+                </div>
+
+                <div class="tech-card">
+                    <a href="page2.html" class="tech-link">
+                        <div class="tech-image-wrapper">
+                            <img src="./image/react.png" alt="React">
+                        </div>
+                        <p class="tech-name">JavaScript(React)</p>
+                    </a>
+                </div>
+
+                <div class="tech-card">
+                    <a href="page3.html" class="tech-link">
+                        <div class="tech-image-wrapper">
+                            <img src="./image/%20java.png" alt="Java">
+                        </div>
+                        <p class="tech-name">Java(Springboot)</p>
+                    </a>
+                </div>
+
+                <div class="tech-card">
+                    <a href="page4.html" class="tech-link">
+                        <div class="tech-image-wrapper">
+                            <img src="./image/sql.png" alt="SQL">
+                        </div>
+                        <p class="tech-name">SQL(PostgreSQL/MySQL)</p>
+                    </a>
+                </div>
+
+                <div class="tech-card">
+                    <a href="page5.html" class="tech-link">
+                        <div class="tech-image-wrapper">
+                            <img src="./image/ruby.png" alt="Ruby">
+                        </div>
+                        <p class="tech-name">Ruby</p>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="contents-item">
-                <a href="page3.html">
-                <img src="./image/タコさんウインナーのイラスト.jpg" alt="タコさんウインナー">
-                </a>
-                <p>Java(Springboot)</p>
-            </div>
+        <div class="contact-form" id="contact">
 
-            <div class="contents-item">
-                <a href="page4.html">
-                <img src="./image/くりのイラスト.jpg" alt="くり">
-                </a>
-                <p>SQL(PostgreSQL/MySQL)</p>
-            </div>
-
-            <script>
-            // すべての画像にホバーイベントを追加
-            const images = document.querySelectorAll('.contents-item img');
-
-            images.forEach(img => {
-            img.addEventListener('mouseover', () => {
-                img.style.transform = 'scale(1.2)';
-            });
-
-            img.addEventListener('mouseout', () => {
-                img.style.transform = 'scale(1)';
-            });
-            });
-            </script>
-              
-        
-        
         </div>
-        
-        <!-- <div>要素を追加し、「contact-form」というclassをつけてください -->
-        <div class="contact-form">
-            
-        </div>
-             
-      
-    </div>
-    
-    <div class="footer">
+
+    </main>
+
+    <footer class="footer">
         <div class="footer-logo">
-            Mizumoto
+            <img src="./image/logo.png" alt="Mizumoto" class="footer-logo-img">
         </div>
-        
+
         <div class="footer-list">
             <ul>
                 <li>会社概要</li>
@@ -104,8 +100,6 @@
                 <li>お問い合わせ</li>
             </ul>
         </div>
-      
-    </div>
-   
+    </footer>
   </body>
 </html>

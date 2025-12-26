@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>mizumotopage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS - Mizumoto Portfolio</title>
     <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="/home/mizukawaairi/my-page/image"> 
   </head>
 
-  
   <body>
-    <div class="header">
-        <div class="header-logo">
-            Mizumoto
-        </div>
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="./image/logo.png" alt="Mizumoto" class="logo-img">
+        </a>
         
-        <div class="header-list">
+        <nav class="header-list">
             <ul>
-              <a href="index.html">
-                <li>自己紹介</li>
-              </a>
-                <li>趣味</li>
-                <li>お問い合わせ</li>
+                <li><a href="index.html">自己紹介</a></li>
+                <li><a href="hobby.html">趣味</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
   
-    <div class="main">
-    <h1>HTML&SCCについて</h1>
-    <p>Reactを学んだ際に一緒に少し勉強しました！<br>
-      SCCは特にまだまだ細かな設定ができないので、これから学んでいきたいと思います！<br>
-      思い通りに動かなかったり、反映させたら文字が消えたりと前途多難です…。
-    </p>
-    </div>
+    <main class="main">
+        <h1 style="color: #e34c26; margin-bottom: 50px; font-weight: 600;">HTML&CSSについて</h1>
+        <div style="background: linear-gradient(135deg, #fff5f0 0%, #ffe8dc 100%); padding: 40px; border-radius: 16px; border-left: 4px solid #e34c26;">
+            <p style="color: #8b2e16; line-height: 2; margin: 0;">
+              Reactの学習過程で、HTMLとCSSの基礎を習得しました。<br>
+              CSSについては、レスポンシブデザインやアニメーション、レイアウトの細かな制御など、より高度な技術を習得するため継続的に学習を進めています。<br>
+              実装においては、ブラウザ間の互換性やスタイルの継承、特定の要素への適用など、想定外の挙動に直面することもあり、デバッグスキルを向上させながら対応しています。
+            </p>
+        </div>
+    </main>
      
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-logo">
-          Mizumoto
+          <img src="./image/logo.png" alt="Mizumoto" class="footer-logo-img">
       </div>
       
       <div class="footer-list">
@@ -45,9 +45,6 @@
               <li>お問い合わせ</li>
           </ul>
       </div>
-    
-  </div>
+    </footer>
   </body>
-  
-  
 </html>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mizumoto - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css"> 
   </head>
   <body>
@@ -15,15 +16,17 @@
 
         <nav class="header-list">
             <ul>
-                <li><a href="index.html">自己紹介</a></li>
-                <li><a href="hobby.html">趣味</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#portfolio">ポートフォリオ</a></li>
+                <li><a href="#hobby">趣味</a></li>
                 <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section class="copy-container">
+        <section class="copy-container" id="about">
             <div class="hero-content">
                 <h1 class="hero-title">HELLO WORLD.</h1>
                 <h2 class="hero-subtitle">わたしのプロフィールへようこそ</h2>
@@ -31,7 +34,7 @@
             </div>
         </section>
 
-        <section class="contents">
+        <section class="contents" id="skills">
             <h3 class="section-title">学習してきた言語</h3>
 
             <div class="tech-grid">
@@ -82,8 +85,126 @@
             </div>
         </section>
 
-        <div class="contact-form" id="contact">
+        <section class="portfolio-section" id="portfolio">
+            <h3 class="section-title">ポートフォリオ</h3>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="bi bi-laptop" style="font-size: 48px; color: #5a7fa8;"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>投稿アプリケーション</h4>
+                        <p class="portfolio-tech">React / Java(Spring Boot) / PostgreSQL</p>
+                        <p class="portfolio-description">
+                            フロントエンドにReact、バックエンドにSpring Bootを使用した投稿アプリケーションを開発しました。
+                            Context APIやカスタムフックを活用し、保守性の高いコードを実現しました。
+                            (掲載準備中)
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">
+                                <i class="bi bi-arrow-right-circle"></i>
+                                詳細を見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="bi bi-code-slash" style="font-size: 48px; color: #cc342d;"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Railsアプリケーション</h4>
+                        <p class="portfolio-tech">Ruby on Rails / Bootstrap / Slim</p>
+                        <p class="portfolio-description">
+                            実務でRailsを使用したWebアプリケーション開発に携わりました。
+                            まだまだわからないことも多いので日々勉強中です。
+                            個人勉強用として、投稿アプリケーションを開発しました。
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="https://kuragechan1001.github.io/sutaba/" class="portfolio-link">
+                                <i class="bi bi-arrow-right-circle"></i>
+                                詳細を見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="bi bi-globe" style="font-size: 48px; color: #e34c26;"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>ポートフォリオサイト</h4>
+                        <p class="portfolio-tech">HTML / CSS / JavaScript</p>
+                        <p class="portfolio-description">
+                            このポートフォリオサイト自体も作品の一つです。
+                            レスポンシブデザインとモダンなUIを意識して制作しました。
+                            HPの制作経験はまだあありませんが、サンプルサイトの作成等をしここにのせています。
+                            （掲載準備中）
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">
+                                <i class="bi bi-arrow-right-circle"></i>
+                                詳細を見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobby-section" id="hobby">
+            <h3 class="section-title">趣味</h3>
+
+            <div class="hobby-gallery">
+                <div class="hobby-image-wrapper">
+                    <img src="./image/hobby.jpg" alt="保存食作り">
+                </div>
+                <div class="hobby-image-wrapper">
+                    <img src="./image/IMG_0824.jpg" alt="家庭菜園">
+                </div>
+                <div class="hobby-image-wrapper">
+                    <img src="./image/IMG_1272.jpg" alt="天日干し">
+                </div>
+                <div class="hobby-image-wrapper">
+                    <img src="./image/IMG_2886.jpg" alt="家庭菜園">
+                </div>
+                <div class="hobby-image-wrapper">
+                    <img src="./image/IMG_5184.jpg" alt="家庭菜園">
+                </div>
+                <div class="hobby-image-wrapper">
+                    <img src="./image/IMG_6170.jpg" alt="家庭菜園">
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #f8f9f5 0%, #f0f4e8 100%); padding: 40px; border-radius: 16px; border-left: 4px solid #6b8e23; max-width: 800px; margin: 0 auto;">
+                <p style="color: #3d5a1f; line-height: 2; margin: 0;">
+                  家庭菜園が趣味です。季節の野菜を育てることで、自然とのつながりを感じながら日々を過ごしています。<br><br>
+                  梅干し作りが特に好きで、毎年手作りしています。味噌作りやらっきょう漬け、三章のみをつけたりもしています。干し柿も作っており、季節の食材を活かした保存食作りを楽しんでいます。<br><br>
+                  前職が不動産売買の営業だったこともあり、子供達とお散歩しながら新しく売り出している家を見つけたり、物件サイトを見るのも好きです。街並みの変化や建築デザインを観察するのが楽しみの一つです。<br><br>
+                  最近は実務で使う技術の勉強に時間を充てています。プログラミングの学習と並行して、趣味の時間も大切にしながら、バランスの取れた生活を心がけています。
+                </p>
+            </div>
+        </section>
+
+        <div class="contact-form" id="contact">
+            <h3 class="section-title">お問い合わせ・SNS</h3>
+            <div class="contact-content">
+                <p style="text-align: center; margin-bottom: 40px; color: #495057; font-size: 18px;">
+                    お気軽にご連絡ください
+                </p>
+                <div class="social-links">
+                    <a href="https://x.com/kuragechan_1001" target="_blank" rel="noopener noreferrer" class="social-link twitter-link">
+                        <i class="bi bi-twitter-x"></i>
+                        Twitter
+                    </a>
+                    <a href="https://qiita.com/kuragechan_1001" target="_blank" rel="noopener noreferrer" class="social-link qiita-link">
+                        <i class="bi bi-code-square"></i>
+                        Qiita
+                    </a>
+                </div>
+            </div>
         </div>
 
     </main>

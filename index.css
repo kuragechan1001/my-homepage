@@ -95,9 +95,9 @@ body {
 
 .header-list a:hover {
   color: #5a7fa8;
-}
+  }
 
-.header-list li {
+  .header-list li {
   list-style: none;
 }
 
@@ -396,7 +396,7 @@ html {
   font-size: 24px;
 }
 
-.footer {
+  .footer {
   background-color: #2c3e50;
   color: #ffffff;
   padding: 50px 60px;
@@ -491,4 +491,119 @@ html {
   bottom: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 100%);
   pointer-events: none;
+}
+
+/* ポートフォリオ詳細ページ用のスタイル */
+.portfolio-detail-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portfolio-detail-image {
+  width: 100%;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.portfolio-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-detail-content {
+  padding: 0 20px;
+}
+
+.portfolio-detail-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 20px;
+}
+
+.portfolio-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.portfolio-info-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.portfolio-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.portfolio-info-item strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.portfolio-info-item p {
+  color: #495057;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.portfolio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portfolio-images-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-images-row .portfolio-detail-image {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .portfolio-images-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-detail-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .portfolio-detail-image {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .portfolio-detail-content {
+    width: 50%;
+    padding: 0 0 0 40px;
+  }
 }
